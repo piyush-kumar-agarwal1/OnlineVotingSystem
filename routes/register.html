@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <style>
+        #imagepart {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 365px;
+        }
+        #selection {
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 370px;
+            padding: 10px;
+        }
+    </style>
     <div id="header">
         <h1>Online Voting System</h1>
     </div>
@@ -21,15 +35,31 @@
             <br><br>
             <input type="text" name="address" placeholder="Address" id="address" required style="width: 365px;">
             <br><br>
-            <label for="photo">Upload image:</label>
-            <input type="file" name="photo" id="photo" required>
+            <center>
+            <div id="imagepart">
+                <label for="photo">Upload image:</label>
+                <input type="file" name="photo" id="photo" required>
+            </div>
             <br><br>
-            Select Role: <select id="dropbox" name="role" id="role">
-                <option value="voter">Voter</option>
-                <option value="party">Party</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Register"><br>
+            <div id="selection">
+                Select Role: <select id="dropbox" name="role" id="role">
+                    <option value="voter">Voter</option>
+                    <option value="party">Party</option>
+                </select>
+            </div>
+            </center>   
+            <br>
+
+            <button 
+            style="font-family: cursive;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 5px;
+                    background-color: #f1c40f;
+                    color: black;">
+                Register
+            </button>                
+                <br>
             Already registered? <a href="../index.html">Login</a>
         </form>
     </div>
